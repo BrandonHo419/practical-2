@@ -7,12 +7,8 @@ void sum_diagonal(int array[4][4]) {
     int sum = 0;
 
     for(int i = 0; i < 4; i++) {
-        for(int j = 0; j < 4; j++) {
-            if(array[i][j] == i) {
-                sum = array[i][j];
-            }
+        sum +=array[i][i];
         }
-    }
 
 
     std::cout << sum << std::endl;

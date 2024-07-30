@@ -2,19 +2,12 @@
 
 int is_identity(int array[10][10]) {
     int size = 10;
-    int count = 0;
-    for(int i = 0; i < size; i++) {
-        for(int j = 0; j < size; j++) {
-            if(array[i][j] == 1) {
-                count = count + 1;
-            }
+    for(int i = 0; i < size; i++) {   
+            if(array[i][i] != 1) {
+                return 0;
         }
     }
-    if(count == 10) {
-        return 1;
-    }else{
-        return 0;
-    }
+    return 1;
 
 }
 

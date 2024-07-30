@@ -3,11 +3,17 @@
 
 void sum_diagonal(int array[4][4]) {
 
-    int diagonal1 = array[0][0];
+    int size = 4;
+    int sum = 0;
 
-    int diagonal2 = array[3][3];
+    for(int i = 0; i < 4; i++) {
+        for(int j = 0; j < 4; j++) {
+            if(array[i][j] == i) {
+                sum = array[i][j];
+            }
+        }
+    }
 
-    int sum = diagonal1 + diagonal2;
 
     std::cout << sum << std::endl;
 

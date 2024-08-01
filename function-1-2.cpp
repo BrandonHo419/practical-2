@@ -10,8 +10,10 @@ int is_identity(int array[10][10]) {
             return 0;
         }
     }
-    return 1;
+    
 
+    }
+    return 1;
 }
 
 

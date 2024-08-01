@@ -16,6 +16,10 @@ int main() {
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
     };
 
-    std::cout << is_identity(array) << std::endl;
+    if (is_identity(array) == 1) {
+        std::cout << "The matrix is an identity matrix " << std::endl;
+    }else{
+        std::cout << "The matrix is not an identity matrix" << std::endl;
     
+    }
 }

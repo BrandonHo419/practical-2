@@ -27,6 +27,7 @@ void print_binary_str(std::string decimal_number) {
 
     for (int j = position - 1; j>= 0; j--){
         std::cout << arr[j] << " " ;
+        std::cout << " " << std::endl;
     }
     
 

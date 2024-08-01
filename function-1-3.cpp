@@ -16,6 +16,7 @@ void count_digits(int array[4][4]) {
             switch(array[i][j]) {
                 case 0:
                     count0 = count0 + 1;
+                    break;
                 case 1:
                     count1 = count1 + 1;
                     break;

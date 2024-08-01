@@ -5,7 +5,15 @@
 
 void print_binary_str(std::string decimal_number) {
     int convert = stoi(decimal_number);
-    
+    if(convert >= 1000000000) {
+        std::cout << "ERROR" << std::endl;
+        return;
+    }
+
+    if (convert <= 0) {
+        std::cout << "ERROR" << std::endl;
+        return;
+    }
 
     int i = 0;
     int arr[100] = {0};
